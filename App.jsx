@@ -1,12 +1,18 @@
-import Card from './Card.jsx'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { Button } from './components/button'
 
 function App() {
-  return(
-    <Card/>
+  const [count, setCount] = useState(0)
 
-  );
-
+  return (
+    <>
+      Subcribe to HRN
+      <Button>R100 for a CV</Button>
+    </>
+  )
 }
 
-
-export default App;
+export default App
